@@ -1,16 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>My first 
-	</title>
-	<meta charset="utf-8"/>
+<style>
+*{
+margin:0px;
+padding:0px;}
+h1{
+color:white;
 
+text-align:center;
+background-color:green;
+width:150px;
+height:50px;
+
+
+}
+h1:hover{
+background-color:red;
+
+}
+#container ul{
+list-style:none;
+}
+#container ul li{
+background-color:#3c3E94;
+width:150px;
+border:1px solid white;
+height:50px;
+line-height:50px;
+text-align:center;
+float:left;
+color:white;
+font-size:18px;
+position:relative;
+}
+#container ul li:hover{
+background-color:green;
+
+}
+#container ul ul{
+display:none;
+}
+#container ul li:hover>ul{
+display:block;
+}
+#container ul ul ul{
+margin-left:150px;
+top:0px;
+position:absolute;
+
+}
+</style>
+<meta charset="utf-8"/>
+<title>
+site1
+</title>
 </head>
 <body>
-<div>this is in div 1</div>
-<span>this is in span </span>
-<div>this is in 2div <span>th is in span 2</span><span>this is in span 3</span><div>this is in div 3</div></div>
-<span>this is in span 4</span><div></div>
-<h1>HELLO PRABHU ! how are you! \n hai pradeep </h1>
+<h1 id="101">welcome</h1>
+<div id="container">
+<ul>
+	<li>Home</li>
+	<li>books
+	<ul>
+	<li>Science
+	<ul>
+	<li>physics</li>
+	<li>chemistry</li>
+	<li>physic2</li>
+	</ul>
+	</li>
+	<li>Maths</li>
+	<li>Social</li>
+
+	</ul>
+	
+	</li>
+	
+	<li>class</li>
+	<li>work</li>
+	<li>about</li>
+</ul>
+</div>
 </body>
 </html>
