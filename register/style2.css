@@ -47,10 +47,10 @@ input{
 }
 .box input[type="text"],[type="password"],[type="number"]{
 	background:transparent;
-	color:black;
+	color:white;
 	border:none;
 	border-bottom:1px solid white;
-	outline-color:#1c8adb;
+
 	
 }
 .box input[type="submit"]{
