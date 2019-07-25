@@ -15,9 +15,9 @@ body{
 	background-position:absolute; 
 	box-shadow: 2px 3px #888888;
 	top: 35%;
-    left: 35%;
+    	left: 35%;
 	position:absolute;
-	opacity:0.8;
+	opacity:0.7;
 }
 center{
 	margin:0;
