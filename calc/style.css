@@ -17,6 +17,7 @@ body{
 	top: 35%;
     left: 35%;
 	position:absolute;
+	opacity:0.8;
 }
 center{
 	margin:0;
