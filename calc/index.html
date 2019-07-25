@@ -17,15 +17,19 @@
 		e=document.form.textarea.value;
 		document.form.textarea.value=e.substring(0,e.length-1);
 		}
+		function backall(){
+		e=document.form.textarea.value;
+		document.form.textarea.value=e.substring(0,0);
+		}
 	</script>	
 	<div class="box" >
 		<center>
-			<table id="table" border="3px" width="200px" height="100px" align="center"  cellspacing="5px">
+			<table id="table" border="3px" width="200px" height="100px" align="center"  cellspacing="10px" cellpadding="5px">
 				<form name="form"> 
-					<tr><td colspan=4 align="center" cellspacing="5px"><h3>calculator</h3></td></tr>
+					<tr><td colspan=4 align="center" cellpadding="10px"><p onclick=backall()>calculator<p></td></tr>
 					<tr>
-						<td colspan=3><input type="text" id="jh" name="textarea" placeholder="Enter Expression"></td>
-						<td><input type="button" name="but" value="&lt-" onclick=back()></td>
+						<td colspan=3><input type="text" id="but" name="textarea" placeholder="Enter Expression"></td>
+						<td><input type="button" id="but" value="&lt-" onclick=back()></td>
 					</tr>
 					<tr>
 						<td><input type="button" id="but" value="1" onclick=insert(1) ></td>
