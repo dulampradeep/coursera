@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<title>
+			scitific calc
+		</title>
+		<style>
+			table{
+				padding:5px;
+				width:350px;
+				height:200px;
+				position:relative;
+				background-color:dodgerblue;
+				border-radius:5px;
+			}
+			td{
+				margin:0;
+				border:0;
+				position:relative;
+				width:50px;
+				height:35px;
+				background-color:rgba(200,250,255,.7);
+				border-radius:10px 0px 10px 0px;
+			}
+			
+			#tab{
+				margin-top:250px;
+				margin-left:550px;
+				position:absolute;
+				box-shadow: 1px 2px #888888;
+				
+			}
+			#but{
+				margin:0;
+				padding:0;
+				border:0;
+				width:100%;
+				height:100%
+				color:black;
+				border-radius:10px 0px 10px 0px;
+				background-color:rgba(200,250,255,.7);
+				padding:7px 18px 7px 18px;
+			}
+			#txt{
+				width:100%;
+				height:100%;
+				border:0;
+				padding-left:5px;
+				margin:0;
+				background-color:rgba(200,250,255,.7);
+				border-radius:10px 0px 10px 0px;
+			}
+			#tt{
+				padding:0;
+			}
+			#hed{
+				background-color:rgba(200,250,255,.7);
+				height:40px;
+				
+			}
+			#hed>th{
+			border-radius:5px;
+			}
+			td:hover{
+				width:40px;
+				height:30px;
+				background-color:rgba(100,150,205,.7);
+				border-radius:5px 0px 5px 0px;
+			}
+		</style>
+	</head>
+	<body>
+
+	<div id="tab">
+		
+		<table cellpadding="3px" cellspacing="5px">
+		<form name="form">
+			<tr id="hed"><th colspan="7">calculator</th></tr>
+			<tr><td id="tt" colspan="5"><input type="text" id="txt" name="tdt"  placeholder="enter value"></td>
+				<td><input type="button" id="but" value="&lt-" onclick=back() /></td>
+				<td><input type="reset" id="but"  value="clr"/></td>
+			</tr>
+			
+			<tr><td><input type="button" id="but" value="sin" onclick=insert('sin') name="but"/></td>
+				<td><input type="button" id="but" value="cos" onclick=insert('cos') /></td>
+				<td><input type="button" id="but" value="tan" onclick=insert('tan') /></td>
+				<td><input type="button" id="but" value="cot" onclick=insert('cot') /></td>
+				<td><input type="button" id="but" value="csc" onclick=insert('cosec') /></td>
+				<td><input type="button" id="but" value="sec" onclick=insert('sec') /></td>
+				<td><input type="button" id="but" value="pow" onclick=insert('pow') /></td>
+			</tr>
+			<tr><td><input type="button" id="but" value="1" onclick="insert('1')"/></td>
+				<td><input type="button" id="but" value="2" onclick="insert('2')"/></td>
+				<td><input type="button" id="but" value="3" onclick=insert(3) /></td>
+				<td><input type="button" id="but" value="4" onclick=insert(4) /></td>
+				<td><input type="button" id="but" value="+" onclick=insert('+') /></td>
+				<td><input type="button" id="but" value="&lt" onclick=insert("&lt") /></td>
+				<td><input type="button" id="but" value="&#8730" onclick=insert("&#8730") /></td>
+				
+			</tr>
+			<tr><td><input type="button" id="but" value="5" onclick="insert('5')" /></td>
+				<td><input type="button" id="but" value="6" onclick="insert('6')" /></td>
+				<td><input type="button" id="but" value="7" onclick="insert('7')" /></td>
+				<td><input type="button" id="but" value="8" onclick="insert('8')" /></td>
+				<td><input type="button" id="but" value="-" onclick="insert('-')" /></td>
+				<td><input type="button" id="but" value="&gt" onclick="insert('&gt')" /></td>
+				<td><input type="button" id="but" value="%" onclick="insert('%')" /></td>
+				
+			</tr>
+			<tr><td><input type="button" id="but"  value="9" onclick="insert('9')"/></td>
+				<td><input type="button" id="but" value="0" onclick="insert('0')"/></td>
+				<td><input type="button" id="but" value="." onclick="insert('.')"/></td>
+				<td colspan="2"><input id="but" type="button" value="=" onclick=evala() /></td>
+				<td><input type="button" id="but" value="*" onclick="insert('*')"/></td>
+				<td><input type="button" id="but"  value="/" onclick="insert('/')"/></td>
+			</tr>
+		</form>
+		</table>
+	
+		</div>
+		<script>
+			function insert(a) {
+				document.form.tdt.value=document.form.tdt.value+a;
+			}
+			function back(a) {
+			var a=document.form.tdt.value;
+				document.form.tdt.value=a.substring(0,a.length-1);
+			}
+			function evala(a) {
+			var a=document.form.tdt.value;
+				document.form.tdt.value=eval(a);
+			}
+		</script>
+	</body>
+</html>
