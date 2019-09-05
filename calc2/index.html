@@ -1,5 +1,6 @@
 <html>
 	<head>
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
 		<title>
 			scitific calc
 		</title>
@@ -9,7 +10,7 @@
 			}
 			table{
 				padding:5px;
-				width:330px;
+				width:30px;
 				height:200px;
 				position:relative;
 				background-color:skyblue;
@@ -26,8 +27,8 @@
 			}
 			
 			#tab{
-				margin-top:250px;
-				margin-left:550px;
+				margin-top:16%;
+				margin-left:28%;
 				position:absolute;
 				box-shadow: 1px 2px #888888;
 				
@@ -131,10 +132,11 @@
 			function back() {
 			var a=document.form.tdt.value;
 				document.form.tdt.value=a.substring(0,a.length-1);
-				p=p.substring(0,a.length-1);
+				//p=p.substring(0,a.length-1);
 				ta=ta.substring(0,a.length-1);
+				return;
 			}
-			function funclear(){ta="";p="";}
+			function funclear(){ta="";p="";num="";t=0;an=0;}
 				function funs(){
 				
 					t=1;
@@ -147,99 +149,121 @@
 					t=2;
 					ta=ta.concat("cos ");
 					document.form.tdt.value = ta;
-				
+					return;
 					
 				}function funt(){
 				
 					t=3;
 					ta=ta.concat("tan ");
 					document.form.tdt.value = ta;					
-				
+					return;
 				}function funco(){
 				
 					t=4;
 					ta=ta.concat("cot ");
 					document.form.tdt.value = ta;
-					
+					return;
 				}function funcsc(){
 				
 					t=5;
 					ta=ta.concat("cosec ");
 					document.form.tdt.value = ta;
+					return;
 				}function funsec(){
 				
 					t=6;
 					ta=ta.concat("sec ");
 					document.form.tdt.value = ta;
+					return;
 				}
 				function funsqrt(){
 				
 					t=7;
 					ta=ta.concat("sqrt ");
 					document.form.tdt.value = ta;
+					return;
 				}
 				function fun(k){
 					if(k == "="){
 						if(t==1){
 							p=p.concat("Math.sin(Number(num))");
-							an=eval(p);
+							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
 							num="";
-							temp=0;
+							t=0;
+							ta=an;
+							p=an;
+						
 						}
 						else if(t==2){
 							p=p.concat("Math.cos(Number(num))");
-							an=eval(p);
+							an=eval(p).toPrecision(9);
 							
 							document.form.tdt.value = an;
 							num="";
-							temp=0;
+							t=0;
+							ta=an;
+							p=an;
+						
 						}
 						else if(t==3){
 							p=p.concat("Math.tan(Number(num))");
-							an=eval(p);
-							
+							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
 							num="";
-							temp=0;;
+							t=0;
+							ta=an;
+							p=an;
+					
 						}
 						else if(t==4){
 							p=p.concat("1/Math.tan(Number(num))");
-							an=eval(p);
-							
+							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
 							num="";
-							temp=0;
+							t=0;
+							ta=an;
+							p=an;
+					
 						}
 						else if(t==5){
 							p=p.concat("1/Math.sin(Number(num))");
-							an=eval(p);
-							
+							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
 							num="";
-							temp=0;
+							t=0;
+							ta=an;
+							p=an;
+					
 						}
 						else if(t==6){
 							p=p.concat("1/Math.cos(Number(num))");
-							an=eval(p);
-							
+							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
 							num="";
-							temp=0;
+							t=0;
+							ta=an;
+							p=an;
+						
 						}
 						else if(t==7){
 							p=p.concat("Math.sqrt(Number(num))");
-							an=eval(p);
-							
+							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
 							num="";
-							temp=0;
+							t=0;
+							ta=an;
+							p=an;
+						
 						}
 						else{
-							an=eval(p);
+							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
-							return;
+							p=an;
+							ta=an;
+						
 						}
+						
 					}
 					else if(k == "+" || k == "-" || k == "*" || k == "/" || k == "**" || k == "%"||k=="<"||k==">"){
 						if(t==1){
@@ -250,6 +274,7 @@
 							document.form.tdt.value = ta;
 							num="";
 							temp=0;
+							return;
 						}
 						else if(t==2){
 							p=p.concat("Math.cos(Number(num))");
@@ -259,6 +284,7 @@
 							document.form.tdt.value = ta;
 							num="";
 							temp=0;
+							return;
 						}
 						else if(t==3){
 							p=p.concat("Math.tan(Number(num))");
@@ -268,6 +294,7 @@
 							document.form.tdt.value = ta;
 							num="";
 							temp=0;
+							return;
 						}
 						else if(t==4){
 							p=p.concat("1/Math.tan(Number(num))");
@@ -277,6 +304,7 @@
 							document.form.tdt.value = ta;
 							num="";
 							temp=0;
+							return;
 						}
 						else if(t==5){
 							p=p.concat("1/Math.sin(Number(num))");
@@ -286,6 +314,7 @@
 							document.form.tdt.value = ta;
 							num="";
 							temp=0;
+							return;
 						}
 						else if(t==6){
 							p=p.concat("1/Math.cos(Number(num))");
@@ -295,6 +324,7 @@
 							document.form.tdt.value = ta;
 							num="";
 							temp=0;
+							return;
 						}
 						else if(t==7){
 							p=p.concat("Math.sqrt(Number(num))");
@@ -303,6 +333,7 @@
 							document.form.tdt.value = ta;
 							num="";
 							temp=0;
+							return;
 						}
 						else{
 							p=p.concat(k);
@@ -318,11 +349,12 @@
 					}
 					else{
 						p=p.concat(k);
-						an=eval(p);
+						
 						ta=ta.concat(k);
-						document.form.tdt.value = an;
+						document.form.tdt.value = ta;
 					}
-				}}
+				}return;
+				}
 				
 		</script>
 	</body>
