@@ -1,32 +1,59 @@
-var t=0;
+			var t1=0;var t2=0;var t=0;
 			var ta="";
 			var p="";
 			var an="";
 			var num="";
 			var rd=0;
 			var pi=Math.PI;
-			function condr(){
-			if(t){
-			if(!rd){
-				
-				num=(pi/180)*num;rd=1;
-					
-				}
-				return;
-			}}
+			if(!t1){
+				document.form.radian.style.backgroundColor = "rgba(255,250,155,.7)";
+			}
 			function conrd(){
+				t1=1;
+				document.form.degree.style.backgroundColor ="rgba(255,250,155,.7)";
+				document.form.radian.style.backgroundColor = "rgba(200,250,255,.2)";
+			}
+			function condr(){
+				t1=0;
+				document.form.radian.style.backgroundColor = "rgba(255,250,155,.7)";
+				document.form.degree.style.backgroundColor = "rgba(200,250,255,.2)";
+			}
+			function intial(){
 			if(t){
-			if(rd){
-				num=(180/pi)*num;rd=0;
-			
+			if(t1){
+				if(!rd){
+					document.form.degree.style.backgroundColor ="rgba(255,250,155,.7)";
+					document.form.radian.style.backgroundColor = "rgba(200,250,255,.2)";
+					num=((22/7)/180)*num;rd=1;
+					
+					}
 				}
-				return;
+			if(!t1){
+				if(rd){
+					document.form.radian.style.backgroundColor = "rgba(255,250,155,.7)";
+					document.form.degree.style.backgroundColor = "rgba(200,250,255,.2)";
+					num=(180/pi)*num;rd=0;
+				}
 			}}
+		
+			}
 			function back() {
-			var a=document.form.tdt.value;
-				document.form.tdt.value=a.substring(0,a.length-1);
-				//p=p.substring(0,a.length-1);
-				ta=ta.substring(0,a.length-1);
+				
+				if(t){
+						if(num!=""){
+							num=num.substring(0,num.length-1);
+							ta=ta.substring(0,ta.length-1);
+						}
+						else{
+							ta=ta.substring(0,ta.length-4);
+							t=0;
+						}
+					}
+					else{
+						ta=ta.substring(0,ta.length-1);
+						p=p.substring(0,p.length-1);
+					}
+					document.form.tdt.value=ta;
 				return;
 			}
 			function funclear(){ta="";p="";num="";t=0;an=0;rd=0;}
@@ -79,6 +106,7 @@ var t=0;
 				function fun(k){
 					if(k == "="){
 						if(t==1){
+						intial();   
 							p=p.concat("Math.sin(Number(num))");
 							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
@@ -89,6 +117,7 @@ var t=0;
 						
 						}
 						else if(t==2){
+						intial();
 							p=p.concat("Math.cos(Number(num))");
 							an=eval(p).toPrecision(9);
 							
@@ -100,8 +129,9 @@ var t=0;
 						
 						}
 						else if(t==3){
+						intial();
 							p=p.concat("Math.tan(Number(num))");
-							an=eval(p).toPrecision(5);
+							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
 							num="";
 							t=0;
@@ -110,6 +140,7 @@ var t=0;
 					
 						}
 						else if(t==4){
+						intial();
 							p=p.concat("1/Math.tan(Number(num))");
 							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
@@ -120,6 +151,7 @@ var t=0;
 					
 						}
 						else if(t==5){
+						intial();
 							p=p.concat("1/Math.sin(Number(num))");
 							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
@@ -130,6 +162,7 @@ var t=0;
 					
 						}
 						else if(t==6){
+						intial();
 							p=p.concat("1/Math.cos(Number(num))");
 							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
@@ -140,6 +173,7 @@ var t=0;
 						
 						}
 						else if(t==7){
+						intial();
 							p=p.concat("Math.sqrt(Number(num))");
 							an=eval(p).toPrecision(9);
 							document.form.tdt.value = an;
@@ -160,6 +194,7 @@ var t=0;
 					}
 					else if(k == "+" || k == "-" || k == "*" || k == "/" || k == "**" || k == "%"||k=="<"||k==">"){
 						if(t==1){
+						intial();
 							p=p.concat("Math.sin(Number(num))");
 							an=eval(p);
 							ta=ta.concat(k);
@@ -170,6 +205,7 @@ var t=0;
 							return;
 						}
 						else if(t==2){
+						intial();
 							p=p.concat("Math.cos(Number(num))");
 							an=eval(p);
 							ta=ta.concat(k);
@@ -180,6 +216,7 @@ var t=0;
 							return;
 						}
 						else if(t==3){
+						intial();
 							p=p.concat("Math.tan(Number(num))");
 							an=eval(p);
 							ta=ta.concat(k);
@@ -190,6 +227,7 @@ var t=0;
 							return;
 						}
 						else if(t==4){
+						intial();
 							p=p.concat("1/Math.tan(Number(num))");
 							an=eval(p);
 							ta=ta.concat(k);
@@ -200,6 +238,7 @@ var t=0;
 							return;
 						}
 						else if(t==5){
+						intial();
 							p=p.concat("1/Math.sin(Number(num))");
 							an=eval(p);
 							ta=ta.concat(k);
@@ -210,6 +249,7 @@ var t=0;
 							return;
 						}
 						else if(t==6){
+						intial();
 							p=p.concat("1/Math.cos(Number(num))");
 							an=eval(p);
 							ta=ta.concat(k);
@@ -220,6 +260,7 @@ var t=0;
 							return;
 						}
 						else if(t==7){
+						intial();
 							p=p.concat("Math.sqrt(Number(num))");
 							ta=eval(p);
 							p=ta.concat(k);
@@ -236,16 +277,20 @@ var t=0;
 					}
 					else {
 					if(t==1||t==2||t==3||t==4||t==5||t==6||t==7){
-						num=num.concat(k);
+						if(k=="("||k==")"){
+							ta=ta.concat(k);
+							}
+						else{
+							num=num.concat(k);
 						ta=ta.concat(k);
+						}
 						document.form.tdt.value = ta;
 					}
 					else{
 						p=p.concat(k);
-						
 						ta=ta.concat(k);
 						document.form.tdt.value = ta;
 					}
 				}return;
 				}
-			
+				
