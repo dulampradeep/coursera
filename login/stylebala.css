@@ -7,15 +7,17 @@ body{
 }
 .box{
 	position:absolute;
-	background:rgba(50,170,100,.5);
-	width:320px;
-	height:460px;
+	background:rgba(0,0,0,0.2);
+	width:370px;
+	height:470px;
 	left:50%;
 	top:50%;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
 	padding:40px 30px 70px 30px;
-	border-radius:3%;
+	border-radius:15px;
+        border-style: outset;
+
 }
 .logo{
 	width:85px;
@@ -23,7 +25,7 @@ body{
 	border-radius:50%;
 	position:absolute;
 	top:-45px;
-	left: calc(40% - 28px);
+	left: calc(50% - 45px);
 	
 }
 h1{
@@ -36,7 +38,7 @@ h1{
 p{
 	font-family:Playfair Display;
 	font-weight:bold;
-	color:rgb(250,150,200);
+	color:	#800000;
 	margin:0;
 	PADDING:0;
 	text-align:center;
@@ -49,14 +51,29 @@ input{
 }
 input[type="text"],[type="password"]{
 		border:none;
-		background:rgba(0,0,0,0.1);
-		color:white;
+		background:rgba(f,f,a,a);
+		color:none;
 	
 		border-radius:7px;
 		font-size:16px;
 }
-input[type="submit"],[type="reset"]{
-	background:#1c8adb;
+input[type="submit"]{
+	background:green;
+	border:none;
+	width:110px;
+	height:35px;
+	margin-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:20px;
+	float:left;
+	display:inline;
+}
+input[type="reset"]
+{
+
+
+        background:red;
 	border:none;
 	width:110px;
 	height:35px;
