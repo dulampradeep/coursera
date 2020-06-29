@@ -1,0 +1,82 @@
+body{
+	margin:0;
+	padding:0;
+	background: url(stuff/pic1.jpg);
+	background-size:cover;
+	font-family:Roboto;
+}
+.box{
+	position:absolute;
+	background:rgba(50,170,100,.5);
+	width:320px;
+	height:400px;
+	left:50%;
+	top:53%;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding:40px 30px 70px 30px;
+	border-radius:3%;
+	overflow-y: scroll;	
+}
+.box::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.logo{
+	width:90px;
+	height:90px;
+	border-radius:50%;
+	position:relative;
+	top:10px;
+	left: calc(50% - 50px);
+	z-index:1;
+}
+h1{
+text-align:center;
+	font-family:Montserrat;
+	font-weight:bold;
+	color:#1c8adb;
+	font-size:32px;
+}
+p{
+	font-family:Playfair Display;
+	font-weight:bold;
+	color:rgb(250,150,200);
+	margin:0;
+	PADDING:0;
+	
+	text-transform:uppercase;
+
+}
+input{ 
+	width:100%;
+	margin-bottom:30px;
+	height:30px;
+}
+.box input[type="text"],[type="password"],[type="number"]{
+	background:rgba(0,0,0,.1);
+	color:white;
+	border:none;
+	
+	border-radius:7px;
+	font-size:16px;
+
+	
+}
+.box input[type="text"],[type="password"],[type="number"]::-webkit-input-placeholder {
+    text-align:center;
+}
+.box input[type="submit"],[type="reset"]{
+	background:#1c8adb;
+	border:none;
+	width:110px;
+	height:35px;
+	margin-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+	border-radius:20px;
+	float:left;
+	display:inline;
+}
