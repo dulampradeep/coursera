@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/teacherlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="false"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView2inteachershown"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/profile" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameinteachershowstudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/atomic_age"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Name "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/emailinteachershown"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/acme"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Email "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/phoneinteachershown"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="phone"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/notificationcount"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundedbbuttonsytle"
+                    android:gravity="center"
+                    android:text="1 "
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorAccent" />
+</LinearLayout>

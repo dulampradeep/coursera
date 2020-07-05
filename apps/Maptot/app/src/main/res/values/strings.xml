@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Maptot</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="normal_map">Normal map</string>
+    <string name="hybrid_map">hybrid map</string>
+    <string name="satellite_map">satellite_map</string>
+    <string name="terrian_map">Terrian map</string>
+    <string name="no_map">No map</string>
+</resources>

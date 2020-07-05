@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerifyMail">
+
+
+    <ProgressBar
+        android:id="@+id/prbar3"
+        style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="-2dp"
+        android:background="#00C51162"
+        android:indeterminate="true"
+        android:indeterminateDuration="2000"
+        android:indeterminateOnly="true"
+        android:scrollbarSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Verify"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/showemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/verifycode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Enter verification code"
+        android:inputType="number"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="verify" />
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">sum</string>
+    <string name="submit">submit</string>
+    <string name="result">Result</string>
+    <string name="enter_another">enter another</string>
+    <string name="enter_a_number">enter a number</string>
+</resources>

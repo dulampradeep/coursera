@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/se"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileinmessage"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/sendermessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/receivermessagestyle"
+                android:gravity="center"
+                android:paddingStart="7dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/status"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom|end"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timeofmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="time"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

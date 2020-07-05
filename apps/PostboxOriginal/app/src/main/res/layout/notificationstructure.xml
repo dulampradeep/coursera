@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false"
+    app:contentPadding="9dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/notificationprofile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/default_profile" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="2dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/notificationperiod"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/atomic_age"
+                        android:gravity="center_vertical"
+                        android:padding="2dp"
+                        android:text="TextView"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/notificationtime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/atma_light"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/notificationsub"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/acme"
+                            android:gravity="center_vertical"
+                            android:padding="2dp"
+                            android:text="TextView"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/notificationstatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/akronim"
+                            android:gravity="center_vertical"
+                            android:padding="2dp"
+                            android:text="TextView"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/deletenotification"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/deletenoti" />
+
+                        <ImageButton
+                            android:id="@+id/reply"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/replynotif" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/replymessagelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/replytextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Report to sir"
+                android:inputType="textPersonName" />
+
+            <ImageButton
+                android:id="@+id/sendreply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/ic_send" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

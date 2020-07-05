@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/floatingintfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyStyle">
+
+        <AutoCompleteTextView
+            android:id="@+id/ed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your first name"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/floatingintlast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyStyle">
+
+        <AutoCompleteTextView
+            android:id="@+id/ed2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your Last name"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

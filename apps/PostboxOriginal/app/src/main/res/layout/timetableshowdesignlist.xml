@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:alpha="20"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/transparent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/daynumber"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/tab_text_1" />
+
+        <TextView
+            android:id="@+id/periodnumber"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/tab_text_1" />
+
+        <TextView
+            android:id="@+id/subname"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/sectionname"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/branchname"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/collegename"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/yearname"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

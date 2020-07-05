@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/clearchat"
+        android:orderInCategory="1"
+        android:title="Clear"
+        android:visible="true"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/grpsettings"
+        android:icon="@drawable/setting"
+        android:orderInCategory="2"
+        android:title="Group settings"
+        android:visible="true"
+        app:showAsAction="withText" />
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitysecond">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="558dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="please enter name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:hint="please enter phone number"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etweb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:hint="Please enter website"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:hint="please enter address"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/happy" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/norm" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/sad" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

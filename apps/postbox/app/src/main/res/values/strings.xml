@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PostBox</string>
+    <string name="Choose">Choose One</string>
+    <string-array name="spinnerelements">
+        <item>Admin</item>
+        <item>Faculty</item>
+        <item>Student</item>
+    </string-array>
+    <string-array name="collegesdata">
+        <item>swrn</item>
+        <item>scet</item>
+        <item>siet</item>
+    </string-array>
+    <string name="title_activity_my_location">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_prad">Map</string>
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    <string name="title_activity_teacher_details">TeacherDetails</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

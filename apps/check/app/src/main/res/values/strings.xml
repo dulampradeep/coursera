@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">check</string>
+    <string name="enter_num">enter num</string>
+    <string name="button">Button</string>
+    <string name="enter_a_num">enter a num</string>
+    <string name="hi_there">Hi There</string>
+    <string name="textview">TextView</string>
+</resources>

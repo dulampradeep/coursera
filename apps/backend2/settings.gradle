@@ -1,0 +1,2 @@
+rootProject.name='backend2'
+include ':app'

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "912295248761",
+    "firebase_url": "https://otpsentproject.firebaseio.com",
+    "project_id": "otpsentproject",
+    "storage_bucket": "otpsentproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912295248761:android:6cbf50469eeb59d18fe5a8",
+        "android_client_info": {
+          "package_name": "com.example.otpsentproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912295248761-rbhe397evpt1q9iep4o2dt4t29qfu32r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ8LD8ohLVfziysRv03Sb9IhOL3nEP1fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912295248761-rbhe397evpt1q9iep4o2dt4t29qfu32r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

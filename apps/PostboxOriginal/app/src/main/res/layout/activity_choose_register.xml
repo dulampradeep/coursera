@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvregisterchoose"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3F3"
+    android:fadingEdge="none"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/logo_touch"
+        app:srcCompat="@drawable/tornado_light" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/spinnerbackground"
+        android:dropDownWidth="wrap_content"
+        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+        android:entries="@array/spinnerelements"
+        android:padding="15dp"
+        android:prompt="@string/Choose"
+        android:stateListAnimator="@drawable/spinneranimation"
+        android:popupElevation="3dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/adregis"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+
+            android:shadowColor="#C8E8A3"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/adlogin"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Login" />
+
+    </LinearLayout>
+
+</LinearLayout>

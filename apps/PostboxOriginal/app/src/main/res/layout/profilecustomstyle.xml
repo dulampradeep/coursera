@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:clipToPadding="false"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tvicon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/username" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/acme"
+                        android:paddingLeft="8dp"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/tvattribute"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/acme"
+                        android:paddingLeft="8dp"
+                        android:text="TextView"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/edittext111"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/acme"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="8dp"
+                        android:text="Name"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/editbut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/edit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

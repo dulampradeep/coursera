@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/bookslogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="My Books"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/allerta_stencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/allbooks"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="allbooks"
+        android:text="All Books"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:strokeColor="#D8F1BB" />
+
+    <Button
+        android:id="@+id/curredbook"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="currbooks"
+        android:text="Current Reading"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/allbooks"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="@+id/allbooks"
+        app:layout_constraintTop_toBottomOf="@+id/allbooks"
+        app:strokeColor="#D8F1BB" />
+
+    <Button
+        android:id="@+id/alreadyred"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:onClick="alreadyredbooks"
+        android:text="Already Red"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/curredbook"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/curredbook"
+        app:layout_constraintTop_toBottomOf="@+id/curredbook"
+        app:strokeColor="#D8F1BB" />
+
+    <Button
+        android:id="@+id/wishlist"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="wishlistbooks"
+        android:text="Wishlist"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/alreadyred"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="@+id/alreadyred"
+        app:layout_constraintTop_toBottomOf="@+id/alreadyred"
+        app:strokeColor="#D8F1BB" />
+
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="favbooks"
+        android:text="Favorite"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/wishlist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/wishlist"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist"
+        app:strokeColor="#D8F1BB" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="aboutapp"
+        android:text="ABOUT"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/favorite"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/favorite"
+        app:layout_constraintTop_toBottomOf="@+id/favorite"
+        app:strokeColor="#D8F1BB" />
+
+    <TextView
+        android:id="@+id/license"
+        android:layout_width="239dp"
+        android:layout_height="26dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Developed by Pradeep"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

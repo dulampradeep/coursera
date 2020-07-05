@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tornado</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="nomap">nomap</string>
+    <string name="normal">normal</string>
+    <string name="hybrid">hybrid</string>
+    <string name="satellite">satellite</string>
+    <string name="terrian">terrian</string>
+</resources>

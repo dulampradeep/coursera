@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forfading1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRegister">
+
+    <ProgressBar
+        android:id="@+id/prbar21"
+        style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="-2dp"
+        android:background="#00C51162"
+        android:indeterminate="true"
+        android:indeterminateDuration="2000"
+        android:indeterminateOnly="true"
+        android:scrollbarSize="20dp" tools:targetApi="lollipop"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:padding="5dp"
+        app:srcCompat="@drawable/tornado_light" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="170dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Register"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView21"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="none">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="true"
+                android:scrollbars="horizontal"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="215dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Student Id :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/username1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:hint="Enter  Registration Number"
+                        android:inputType="textPersonName" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Name :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/name1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:hint="Enter Name"
+                        android:inputType="textPersonName" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Email:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/mail1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:hint="Enter Mail"
+                        android:inputType="textEmailAddress" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Password:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/password1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:hint="Create Password"
+                        android:inputType="textPassword" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="ReEnter:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/repassword1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView101"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Phone :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/phone1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:hint="Enter Phone"
+                        android:inputType="phone" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView10gender1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Gender :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/gedergroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <RadioButton
+                            android:id="@+id/male1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/female1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Female" />
+                    </RadioGroup>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView121"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Year :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/yearspinner"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/spinnerbackground"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView1111"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Section :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/sectionspinner"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/spinnerbackground"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textViewbranch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Branch :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/branchspinner"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/spinnerbackground"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tvco"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Collage :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner21"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/spinnerbackground"
+                        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                        android:entries="@array/collegesdata" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView81"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Address :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/address1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ems="10"
+                        android:hint="Enter Address"
+                        android:inputType="textPostalAddress" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:gravity="right"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/cancel1"
+                        android:layout_width="120dp"
+                        android:layout_height="55dp"
+                        android:text="Clear" />
+
+                    <Button
+                        android:id="@+id/register1"
+                        android:layout_width="120dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Register" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="150dp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="150dp" />
+
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

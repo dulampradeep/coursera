@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="10dp"
+    android:animateLayoutChanges="true"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="false"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView2inteachershown"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/profile" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameinteachershowstudent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/atomic_age"
+                android:gravity="center|center_vertical"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:text="Name "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailinteachershown"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/acme"
+                android:gravity="center|center_vertical"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:text="Email "
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneinteachershown"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|center_vertical"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:text="phone"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
