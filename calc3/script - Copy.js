@@ -1,4 +1,4 @@
-var t1=0;var t2=0;var t=0;
+            var t1=0;var t2=0;var t=0;
 			var ta="";
 			var p="";
 			var an="";
