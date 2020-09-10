@@ -1,1 +1,312 @@
-var _0x251b=['Math.cos(Number(num))','tab','margin-left:15%;\x20transistion:5s;','getElementById','history','visibility','visible','innerHTML','margin-left:28%;','hidden','radian','style','backgroundColor','form','degree','rgba(200,250,255,.2)','rgba(255,250,155,.7)','substring','length','value','concat','tdt','tan\x20','cot\x20','cosec\x20','sec\x20','sqrt\x20','Math.sin(Number(num))',')\x20=\x20','toPrecision','cos(','<br>','Math.tan(Number(num))','tan(','1/Math.tan(Number(num))','cot(','1/Math.sin(Number(num))','cosec(','1/Math.cos(Number(num))','sec(','Math.sqrt(Number(num))','sqrt(','sin('];(function(_0x5a6dc6,_0x4db4bd){var _0x215fdb=function(_0x4fcb9a){while(--_0x4fcb9a){_0x5a6dc6['push'](_0x5a6dc6['shift']());}};_0x215fdb(++_0x4db4bd);}(_0x251b,0x10c));var _0x1844=function(_0x565710,_0x2d9871){_0x565710=_0x565710-0x0;var _0x538f20=_0x251b[_0x565710];return _0x538f20;};var t1=0x0;var t2=0x0;var t=0x0;var ta='';var p='';var an='';var num='';var rd=0x0;var hist='';var pi=Math['PI'];if(!t1){document['form'][_0x1844('0x0')][_0x1844('0x1')][_0x1844('0x2')]='rgba(255,250,155,.7)';}function conrd(){t1=0x1;document[_0x1844('0x3')][_0x1844('0x4')][_0x1844('0x1')][_0x1844('0x2')]='rgba(255,250,155,.7)';document[_0x1844('0x3')][_0x1844('0x0')]['style']['backgroundColor']=_0x1844('0x5');}function condr(){t1=0x0;document[_0x1844('0x3')][_0x1844('0x0')][_0x1844('0x1')]['backgroundColor']=_0x1844('0x6');document[_0x1844('0x3')]['degree'][_0x1844('0x1')]['backgroundColor']='rgba(200,250,255,.2)';}function intial(){if(t){if(t1){if(!rd){document[_0x1844('0x3')][_0x1844('0x4')][_0x1844('0x1')][_0x1844('0x2')]='rgba(255,250,155,.7)';document[_0x1844('0x3')][_0x1844('0x0')]['style'][_0x1844('0x2')]=_0x1844('0x5');num=0x16/0x7/0xb4*num;rd=0x1;}}if(!t1){if(rd){document[_0x1844('0x3')]['radian'][_0x1844('0x1')][_0x1844('0x2')]='rgba(255,250,155,.7)';document[_0x1844('0x3')][_0x1844('0x4')][_0x1844('0x1')][_0x1844('0x2')]='rgba(200,250,255,.2)';num=0xb4/pi*num;rd=0x0;}}}}function back(){if(t){if(num!=''){num=num[_0x1844('0x7')](0x0,num['length']-0x1);ta=ta[_0x1844('0x7')](0x0,ta[_0x1844('0x8')]-0x1);}else{ta=ta['substring'](0x0,ta['length']-0x4);t=0x0;}}else{ta=ta[_0x1844('0x7')](0x0,ta[_0x1844('0x8')]-0x1);p=p[_0x1844('0x7')](0x0,p[_0x1844('0x8')]-0x1);}document[_0x1844('0x3')]['tdt'][_0x1844('0x9')]=ta;return;}function funclear(){ta='';p='';num='';t=0x0;an=0x0;rd=0x0;}function funs(){dbclick();t=0x1;ta=ta[_0x1844('0xa')]('sin\x20');document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;return;}function func(){dbclick();t=0x2;ta=ta[_0x1844('0xa')]('cos\x20');document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;return;}function funt(){dbclick();t=0x3;ta=ta['concat'](_0x1844('0xc'));document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;return;}function funco(){dbclick();t=0x4;ta=ta['concat'](_0x1844('0xd'));document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;return;}function funcsc(){dbclick();t=0x5;ta=ta['concat'](_0x1844('0xe'));document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;return;}function funsec(){dbclick();t=0x6;ta=ta[_0x1844('0xa')](_0x1844('0xf'));document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;return;}function funsqrt(){dbclick();t=0x7;ta=ta[_0x1844('0xa')](_0x1844('0x10'));document[_0x1844('0x3')]['tdt'][_0x1844('0x9')]=ta;return;}function fun(_0x197616){if(_0x197616=='='){if(t==0x1){intial();p=p[_0x1844('0xa')](_0x1844('0x11'));an=eval(p)['toPrecision'](0x9);hist=hist['concat']('sin('+num+_0x1844('0x12')+an+'<br>');document['form'][_0x1844('0xb')][_0x1844('0x9')]=an;num='';t=0x0;ta=an;p=an;}else if(t==0x2){intial();p=p[_0x1844('0xa')]('Math.cos(Number(num))');an=eval(p)[_0x1844('0x13')](0x9);hist=hist[_0x1844('0xa')](_0x1844('0x14')+num+_0x1844('0x12')+an+_0x1844('0x15'));document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=an;num='';t=0x0;ta=an;p=an;}else if(t==0x3){intial();p=p[_0x1844('0xa')](_0x1844('0x16'));an=eval(p)['toPrecision'](0x9);hist=hist[_0x1844('0xa')](_0x1844('0x17')+num+_0x1844('0x12')+an+_0x1844('0x15'));document[_0x1844('0x3')][_0x1844('0xb')]['value']=an;num='';t=0x0;ta=an;p=an;}else if(t==0x4){intial();p=p[_0x1844('0xa')](_0x1844('0x18'));an=eval(p)[_0x1844('0x13')](0x9);hist=hist[_0x1844('0xa')](_0x1844('0x19')+num+_0x1844('0x12')+an+'<br>');document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=an;num='';t=0x0;ta=an;p=an;}else if(t==0x5){intial();p=p[_0x1844('0xa')](_0x1844('0x1a'));an=eval(p)[_0x1844('0x13')](0x9);hist=hist[_0x1844('0xa')](_0x1844('0x1b')+num+')\x20=\x20'+an+_0x1844('0x15'));document[_0x1844('0x3')]['tdt'][_0x1844('0x9')]=an;num='';t=0x0;ta=an;p=an;}else if(t==0x6){intial();p=p[_0x1844('0xa')](_0x1844('0x1c'));an=eval(p)[_0x1844('0x13')](0x9);hist=hist[_0x1844('0xa')](_0x1844('0x1d')+num+_0x1844('0x12')+an+'<br>');document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=an;num='';t=0x0;ta=an;p=an;}else if(t==0x7){intial();p=p['concat'](_0x1844('0x1e'));an=eval(p)[_0x1844('0x13')](0x9);hist=hist[_0x1844('0xa')](_0x1844('0x1f')+num+_0x1844('0x12')+an+_0x1844('0x15'));document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=an;num='';t=0x0;ta=an;p=an;}else{an=Number(eval(p));hist=hist[_0x1844('0xa')]('='+an+'<br>');document[_0x1844('0x3')][_0x1844('0xb')]['value']=an;p=an;ta=an;}dbclick();}else if(_0x197616=='+'||_0x197616=='-'||_0x197616=='*'||_0x197616=='/'||_0x197616=='**'||_0x197616=='%'||_0x197616=='<'||_0x197616=='>'){if(t==0x1){intial();p=p[_0x1844('0xa')](_0x1844('0x11'));hist=hist['concat'](_0x1844('0x20')+num+')'+_0x197616);an=eval(p)[_0x1844('0x13')](0x9);ta=ta[_0x1844('0xa')](_0x197616);p=p[_0x1844('0xa')](_0x197616);document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;num='';temp=0x0;return;}else if(t==0x2){intial();p=p[_0x1844('0xa')](_0x1844('0x21'));hist=hist['concat'](_0x1844('0x14')+num+')'+_0x197616);an=eval(p)[_0x1844('0x13')](0x9);ta=ta[_0x1844('0xa')](_0x197616);p=p[_0x1844('0xa')](_0x197616);document['form'][_0x1844('0xb')][_0x1844('0x9')]=ta;num='';temp=0x0;return;}else if(t==0x3){intial();p=p[_0x1844('0xa')](_0x1844('0x16'));hist=hist[_0x1844('0xa')](_0x1844('0x17')+num+')'+_0x197616);an=eval(p)[_0x1844('0x13')](0x9);ta=ta[_0x1844('0xa')](_0x197616);p=p[_0x1844('0xa')](_0x197616);document['form'][_0x1844('0xb')][_0x1844('0x9')]=ta;num='';temp=0x0;return;}else if(t==0x4){intial();p=p['concat'](_0x1844('0x18'));hist=hist[_0x1844('0xa')]('cot('+num+')'+_0x197616);an=eval(p)[_0x1844('0x13')](0x9);ta=ta[_0x1844('0xa')](_0x197616);p=p[_0x1844('0xa')](_0x197616);document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;num='';temp=0x0;return;}else if(t==0x5){intial();p=p[_0x1844('0xa')]('1/Math.sin(Number(num))');hist=hist['concat'](_0x1844('0x1b')+num+')'+_0x197616);an=eval(p)['toPrecision'](0x9);ta=ta['concat'](_0x197616);p=p['concat'](_0x197616);document[_0x1844('0x3')][_0x1844('0xb')]['value']=ta;num='';temp=0x0;return;}else if(t==0x6){intial();p=p['concat']('1/Math.cos(Number(num))');hist=hist['concat'](_0x1844('0x1d')+num+')'+_0x197616);an=eval(p)[_0x1844('0x13')](0x9);ta=ta[_0x1844('0xa')](_0x197616);p=p[_0x1844('0xa')](_0x197616);document[_0x1844('0x3')][_0x1844('0xb')]['value']=ta;num='';temp=0x0;return;}else if(t==0x7){intial();p=p[_0x1844('0xa')]('Math.sqrt(Number(num))');hist=hist[_0x1844('0xa')](_0x1844('0x1f')+num+')'+_0x197616);an=eval(p)[_0x1844('0x13')](0x9);ta=ta[_0x1844('0xa')](_0x197616);p=p['concat'](_0x197616);document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;num='';temp=0x0;return;}else{p=p[_0x1844('0xa')](_0x197616);hist=hist[_0x1844('0xa')](_0x197616);ta=ta[_0x1844('0xa')](_0x197616);document[_0x1844('0x3')]['tdt']['value']=ta;}dbclick();}else{if(t==0x1||t==0x2||t==0x3||t==0x4||t==0x5||t==0x6||t==0x7){if(_0x197616=='('||_0x197616==')'){ta=ta[_0x1844('0xa')](_0x197616);}else{num=num[_0x1844('0xa')](_0x197616);ta=ta[_0x1844('0xa')](_0x197616);}document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;}else{p=p[_0x1844('0xa')](_0x197616);hist=hist[_0x1844('0xa')](_0x197616);ta=ta[_0x1844('0xa')](_0x197616);document[_0x1844('0x3')][_0x1844('0xb')][_0x1844('0x9')]=ta;dbclick();}}return;}function dbclick(){document['getElementById'](_0x1844('0x22'))[_0x1844('0x1')]=_0x1844('0x23');document[_0x1844('0x24')](_0x1844('0x25'))['style'][_0x1844('0x26')]=_0x1844('0x27');document[_0x1844('0x24')](_0x1844('0x25'))[_0x1844('0x28')]=hist;}function dbout(){document['getElementById'](_0x1844('0x22'))[_0x1844('0x1')]=_0x1844('0x29');document[_0x1844('0x24')](_0x1844('0x25'))[_0x1844('0x1')][_0x1844('0x26')]=_0x1844('0x2a');}
+            var t1=0;var t2=0;var t=0;
+			var ta="";
+			var p="";
+			var an="";
+			var num="";
+			var rd=0;
+			var hist="";
+			var pi=Math.PI;
+			if(!t1){
+				document.form.radian.style.backgroundColor = "rgba(255,250,155,.7)";
+			}
+			function conrd(){
+				t1=1;
+				document.form.degree.style.backgroundColor ="rgba(255,250,155,.7)";
+				document.form.radian.style.backgroundColor = "rgba(200,250,255,.2)";
+			}
+			function condr(){
+				t1=0;
+				document.form.radian.style.backgroundColor = "rgba(255,250,155,.7)";
+				document.form.degree.style.backgroundColor = "rgba(200,250,255,.2)";
+			}
+			function intial(){
+			if(t){
+			if(t1){
+				if(!rd){
+					document.form.degree.style.backgroundColor ="rgba(255,250,155,.7)";
+					document.form.radian.style.backgroundColor = "rgba(200,250,255,.2)";
+					num=((22/7)/180)*num;rd=1;
+					
+					}
+				}
+			if(!t1){
+				if(rd){
+					document.form.radian.style.backgroundColor = "rgba(255,250,155,.7)";
+					document.form.degree.style.backgroundColor = "rgba(200,250,255,.2)";
+					num=(180/pi)*num;rd=0;
+				}
+			}}
+		
+			}
+			function back() {
+				
+				if(t){
+						if(num!=""){
+							num=num.substring(0,num.length-1);
+							ta=ta.substring(0,ta.length-1);
+						}
+						else{
+							ta=ta.substring(0,ta.length-4);
+							t=0;
+						}
+					}
+					else{
+						ta=ta.substring(0,ta.length-1);
+						p=p.substring(0,p.length-1);
+					}
+					document.form.tdt.value=ta;
+				return;
+			}
+			function funclear(){ta="";p="";num="";t=0;an=0;rd=0;}
+				function funs(){
+					dbclick();
+					t=1;
+					ta=ta.concat("sin ");
+					document.form.tdt.value = ta;
+					return;
+					
+				}function func(){
+				dbclick();
+					t=2;
+					ta=ta.concat("cos ");
+					document.form.tdt.value = ta;
+					return;
+					
+				}function funt(){
+				dbclick();
+					t=3;
+					ta=ta.concat("tan ");
+					document.form.tdt.value = ta;					
+					return;
+				}function funco(){
+				dbclick();
+					t=4;
+					ta=ta.concat("cot ");
+					document.form.tdt.value = ta;
+					return;
+				}function funcsc(){
+				dbclick();
+					t=5;
+					ta=ta.concat("cosec ");
+					document.form.tdt.value = ta;
+					return;
+				}function funsec(){
+				dbclick();
+					t=6;
+					ta=ta.concat("sec ");
+					document.form.tdt.value = ta;
+					return;
+				}
+				function funsqrt(){
+				dbclick();
+					t=7;
+					ta=ta.concat("sqrt ");
+					document.form.tdt.value = ta;
+					return;
+				}
+				function fun(k){
+				
+					if(k == "="){
+						if(t==1){
+						intial();   
+							p=p.concat("Math.sin(Number(num))");
+							an=eval(p).toPrecision(9);hist=hist.concat("sin("+num+") = "+an+"<br>");
+							document.form.tdt.value = an;
+							num="";
+							t=0;
+							ta=an;
+							p=an;
+						
+						}
+						else if(t==2){
+						intial();
+							p=p.concat("Math.cos(Number(num))");
+							an=eval(p).toPrecision(9);hist=hist.concat("cos("+num+") = "+an+"<br>");
+							
+							document.form.tdt.value = an;
+							num="";
+							t=0;
+							ta=an;
+							p=an;
+						
+						}
+						else if(t==3){
+						intial();
+							p=p.concat("Math.tan(Number(num))");
+							an=eval(p).toPrecision(9);hist=hist.concat("tan("+num+") = "+an+"<br>");
+							document.form.tdt.value = an;
+							num="";
+							t=0;
+							ta=an;
+							p=an;
+					
+						}
+						else if(t==4){
+						intial();
+							p=p.concat("1/Math.tan(Number(num))");
+							an=eval(p).toPrecision(9);hist=hist.concat("cot("+num+") = "+an+"<br>");
+							document.form.tdt.value = an;
+							num="";
+							t=0;
+							ta=an;
+							p=an;
+					
+						}
+						else if(t==5){
+						intial();
+							p=p.concat("1/Math.sin(Number(num))");
+							an=eval(p).toPrecision(9);hist=hist.concat("cosec("+num+") = "+an+"<br>");
+							document.form.tdt.value = an;
+							num="";
+							t=0;
+							ta=an;
+							p=an;
+					
+						}
+						else if(t==6){
+						intial();
+							p=p.concat("1/Math.cos(Number(num))");
+							an=eval(p).toPrecision(9);hist=hist.concat("sec("+num+") = "+an+"<br>");
+							document.form.tdt.value = an;
+							num="";
+							t=0;
+							ta=an;
+							p=an;
+						
+						}
+						else if(t==7){
+						intial();
+							p=p.concat("Math.sqrt(Number(num))");
+							an=eval(p).toPrecision(9);hist=hist.concat("sqrt("+num+") = "+an+"<br>");
+							document.form.tdt.value = an;
+							num="";
+							t=0;
+							ta=an;
+							p=an;
+						
+						}
+						else{
+							an=Number(eval(p));hist=hist.concat("="+an+"<br>");
+							document.form.tdt.value = an;
+							p=an;
+							ta=an;
+						
+						}
+						dbclick();
+					}
+					else if(k == "+" || k == "-" || k == "*" || k == "/" || k == "**" || k == "%"||k=="<"||k==">"){
+					
+						if(t==1){
+						intial();
+							p=p.concat("Math.sin(Number(num))");hist=hist.concat("sin("+num+")"+k);
+							an=eval(p).toPrecision(9);
+							ta=ta.concat(k);
+							p=p.concat(k);
+							document.form.tdt.value = ta;
+							num="";
+							temp=0;
+							return;
+						}
+						else if(t==2){
+						intial();
+							p=p.concat("Math.cos(Number(num))");hist=hist.concat("cos("+num+")"+k);
+							an=eval(p).toPrecision(9);
+							ta=ta.concat(k);
+							p=p.concat(k);
+							document.form.tdt.value = ta;
+							num="";
+							temp=0;
+							return;
+						}
+						else if(t==3){
+						intial();
+							p=p.concat("Math.tan(Number(num))");hist=hist.concat("tan("+num+")"+k);
+							an=eval(p).toPrecision(9);
+							ta=ta.concat(k);
+							p=p.concat(k);
+							document.form.tdt.value = ta;
+							num="";
+							temp=0;
+							return;
+						}
+						else if(t==4){
+						intial();
+							p=p.concat("1/Math.tan(Number(num))");hist=hist.concat("cot("+num+")"+k);
+							an=eval(p).toPrecision(9);
+							ta=ta.concat(k);
+							p=p.concat(k);
+							document.form.tdt.value = ta;
+							num="";
+							temp=0;
+							return;
+						}
+						else if(t==5){
+						intial();
+							p=p.concat("1/Math.sin(Number(num))");hist=hist.concat("cosec("+num+")"+k);
+							an=eval(p).toPrecision(9);
+							ta=ta.concat(k);
+							p=p.concat(k);
+							document.form.tdt.value = ta;
+							num="";
+							temp=0;
+							return;
+						}
+						else if(t==6){
+						intial();
+							p=p.concat("1/Math.cos(Number(num))");hist=hist.concat("sec("+num+")"+k);
+							an=eval(p).toPrecision(9);
+							ta=ta.concat(k);
+							p=p.concat(k);
+							document.form.tdt.value = ta;
+							num="";
+							temp=0;
+							return;
+						}
+						else if(t==7){
+						intial();
+							p=p.concat("Math.sqrt(Number(num))");hist=hist.concat("sqrt("+num+")"+k);
+							an=eval(p).toPrecision(9);
+							ta=ta.concat(k);
+							p=p.concat(k);
+							document.form.tdt.value = ta;
+							num="";
+							temp=0;
+							return;
+						}
+						else{
+							p=p.concat(k);hist=hist.concat(k);
+							ta=ta.concat(k);
+							document.form.tdt.value = ta;
+						}dbclick();
+					}
+					else {
+					if(t==1||t==2||t==3||t==4||t==5||t==6||t==7){
+						if(k=="("||k==")"){
+							ta=ta.concat(k);
+							}
+						else{
+							num=num.concat(k);
+						ta=ta.concat(k);
+						}
+						document.form.tdt.value = ta;
+					}
+					else{
+					
+						p=p.concat(k);hist=hist.concat(k);
+						ta=ta.concat(k);
+						document.form.tdt.value = ta;dbclick();
+					}
+				}return;
+				}
+				
+
+					function dbclick() {
+					 
+					  document.getElementById("history").style.visibility="visible";
+					   document.getElementById("history").innerHTML=hist;
+					}
+
+					function dbout() {
+					  
+					    document.getElementById("history").style.visibility="hidden";
+					}
