@@ -29,12 +29,12 @@
 			}
 			
 			#tab{
-				margin-top:16%;
-				margin-left:28%;
-				position:absolute;
+				display:inline-block;
+				position:relative;
 				box-shadow: 1px 2px #888888;
 				//animation: mymove 1s ;
-			//	animation-timing-function: linear;
+				//animation-timing-function: linear;
+			
 			}
 			#but{
 				margin:0;
@@ -81,19 +81,22 @@
 				background-color:rgba(200,250,255,.7);
 				border-radius:0px 7px 7px 0px;
 				padding:17px;
-				position:absolute;
-				top:228px;left:761px;
+				
 				box-sizing:border-box;
+				display:inline-block;
 				visibility:hidden;
 				overflow:scroll;
 			}
-	//		#hed:hover{
-				
-		//	}
-		//	@keyframes mymove {
-		//		from {right:500px;}
-		//		to {right:900px;}
-		//	}
+			#history::-webkit-scrollbar {
+				display: none;
+			}
+			#hed:hover{
+				background:lightyellow;
+			}
+			//@keyframes mymove {
+			//	from {left:0px;}
+			//	to {left:-70px;}
+			//}
 		#histclear{
 			width:20px;
 			height:20px;
@@ -102,15 +105,22 @@
 			background-color:red;
 		
 		}
+		#box{
+		
+		position:relative;
+		top:calc(50% - 200px);	
+		left:calc(50% - 300px);	
+			
+		}
 		</style>
 	</head>
 	<body>
-
+	<div id="box">
 	<div name="div1" id="tab">
 		
 		<table cellpadding="3px" cellspacing="5px"  >
 		<form name="form">
-			<tr id="hed"><th colspan="8"  ondblclick=dbclick()>calculator</th></tr>
+			<tr id="hed"><th colspan="8"  onclick=dbclick()>calculator</th></tr>
 			<tr><td id="tt" colspan="6"><input type="text" id="txt" name="tdt"  placeholder="enter value" readonly></td>
 				<td><input type="button" id="but" value="&lt-" onclick=back() /></td>
 				<td><input type="reset" id="but"  value="clr" onclick=funclear() /></td>
@@ -157,9 +167,10 @@
 		</table>
 	
 		</div>
-		<div id="history" ondblclick=dbout()>
+		<div id="history" onclick=dbout()>
 			<center visibility="visible" ><h4>HISTORY</h4></center>
 
+		</div>
 		</div>
 		<script type="text/javascript" src="script.js">
 		</script>
