@@ -301,12 +301,12 @@
 				
 
 					function dbclick() {
-					  document.getElementById("tab").style="margin-left:15%; transistion:5s;";
+					 
 					  document.getElementById("history").style.visibility="visible";
 					   document.getElementById("history").innerHTML=hist;
 					}
 
 					function dbout() {
-					  document.getElementById("tab").style="margin-left:28%;";
+					  
 					    document.getElementById("history").style.visibility="hidden";
 					}
