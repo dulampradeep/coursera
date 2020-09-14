@@ -12,7 +12,6 @@ public class BackendConnect extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         Backendless.setUrl(server);
         Backendless.initApp(getApplicationContext(), APPID, APIID);
 

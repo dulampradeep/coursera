@@ -1,14 +1,15 @@
 package com.example.postboxoriginal;
 
 public class Messagesclass {
+    private  String type;
     private String sender;
     private String receiver;
     private String message;
     private String timestamp;
     private String status;
     private String messageid;
-
     public Messagesclass() {
+        this.type=null;
         this.sender = null;
         this.receiver = null;
         this.message = null;
@@ -16,6 +17,15 @@ public class Messagesclass {
         this.status=null;
         this.messageid=null;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
 
     public String getMessageid() {
         return messageid;

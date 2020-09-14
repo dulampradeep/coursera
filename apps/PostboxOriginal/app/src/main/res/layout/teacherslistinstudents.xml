@@ -60,14 +60,15 @@
                     android:gravity="center_vertical"
                     android:paddingLeft="10dp"
                     android:text="Email "
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/phoneinteachershown"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
+                    android:gravity="top"
                     android:paddingLeft="10dp"
                     android:text="phone"
                     android:textStyle="bold" />

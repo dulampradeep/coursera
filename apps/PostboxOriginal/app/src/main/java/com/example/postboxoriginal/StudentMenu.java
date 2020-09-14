@@ -138,7 +138,7 @@ public class StudentMenu extends AppCompatActivity implements NavigationView.OnN
 
         if(savedInstanceState==null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.frament_container, new TeacherDetails() ).commit();
-            n.setCheckedItem(R.id.techdetails);
+            n.setCheckedItem(R.id.navchat1);
         }
         //startActivity(new Intent(MainActivity.this,MapsPrad.class));
 
@@ -175,10 +175,10 @@ public class StudentMenu extends AppCompatActivity implements NavigationView.OnN
             case R.id.notifications:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frament_container,new NotifiesFragment()).commit();
                 break;
-            case R.id.techdetails:
+            case R.id.navchat1:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frament_container,new TeacherDetails()).commit();
                 break;
-            case R.id.navchat1:
+            case R.id.techdetails:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frament_container,new Chat1Fragment()).commit();
                 break;
             case R.id.profile:
@@ -192,7 +192,7 @@ public class StudentMenu extends AppCompatActivity implements NavigationView.OnN
                 FirebaseUser user = mauth.getCurrentUser();
                 if (user != null){
                     mauth.signOut();
-                    Toast.makeText(this, user.getEmail()+ " Sign out!", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, user.getEmail()+ " Sign out!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(StudentMenu.this,choose_register.class));
                     StudentMenu.this.finish();
                 }else{
@@ -271,7 +271,6 @@ public class StudentMenu extends AppCompatActivity implements NavigationView.OnN
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
-
                 Uri resultUri = result.getUri();
                 saveToBackendless(resultUri);
                 prbar2.setVisibility(View.VISIBLE);

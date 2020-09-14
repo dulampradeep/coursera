@@ -9,15 +9,10 @@
     android:layout_margin="10dp"
     android:orientation="vertical">
 
-    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="right"
-        app:cardBackgroundColor="#FFFFFF"
-        app:cardCornerRadius="9dp"
-        app:cardElevation="2dp"
-        app:cardPreventCornerOverlap="false"
-        app:cardUseCompatPadding="false">
+        android:layout_gravity="right">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profileinmessage"
@@ -40,9 +35,15 @@
             android:paddingRight="70dp"
             android:paddingBottom="15dp"
             android:text="hai"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+        <ImageView
+            android:id="@+id/picurl"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/logo_touch"
+            android:visibility="gone"/>
         <TextView
             android:id="@+id/timeofmessage"
             android:layout_width="wrap_content"
@@ -57,6 +58,6 @@
             android:layout_width="20dp"
             android:layout_height="15dp"
             android:layout_gravity="bottom|end" />
-    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+    </FrameLayout>
 
 </LinearLayout>

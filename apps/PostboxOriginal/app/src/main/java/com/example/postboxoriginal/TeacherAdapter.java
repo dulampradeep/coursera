@@ -76,7 +76,7 @@ public class TeacherAdapter extends RecyclerView.Adapter<TeacherAdapter.TeacherV
 
         holder.temail.setText(l.get(position).getEmail());
         holder.tname.setText(l.get(position).getName());
-        holder.phone.setText(l.get(position).getPhno());
+        holder.phone.setText(l.get(position).getUsername());
         Picasso.get().load(Uri.parse(l.get(position).getProfilepic()))
                 .error(R.drawable.default_profile)
                 .placeholder(R.drawable.default_profile)

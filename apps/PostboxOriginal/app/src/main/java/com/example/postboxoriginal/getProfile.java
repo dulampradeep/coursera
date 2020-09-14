@@ -57,7 +57,7 @@ public class getProfile extends Fragment {
     String[] attr;
     RecyclerView rv1;
     RecyclerView.Adapter adp;
-    private static final String LOGINDETAILS = "com.example.postbox.data";
+//    private static final String LOGINDETAILS = "com.example.postbox.data";
 
     @Nullable
     @Override

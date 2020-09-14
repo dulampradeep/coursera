@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundgradient"
+    android:background="@android:color/white"
 
     android:fitsSystemWindows="true"
 
@@ -16,15 +16,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:background="@color/colorAccent"
+        android:layout_margin="1dp"
+        android:background="@drawable/backgroundgradient"
         android:gravity="top"
         android:orientation="vertical">
+
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/materialtoolbar"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:theme="@style/ThemeOverlay.MaterialComponents.Toolbar.Surface"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
             app:popupTheme="@style/Theme.MaterialComponents.Dialog.Bridge">
 
             <LinearLayout
@@ -36,9 +40,11 @@
                     android:id="@+id/back"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginLeft="3dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="3.5"
+                    android:padding="5dp"
                     app:srcCompat="@drawable/back" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
@@ -47,6 +53,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="5.5"
+                    android:padding="1dp"
                     android:src="@drawable/default_profile">
 
                 </de.hdodenhof.circleimageview.CircleImageView>
@@ -55,7 +62,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="25"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
                     <TextView
                         android:id="@+id/chatname"
@@ -75,35 +83,42 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/acme"
-                        android:gravity="center_vertical"
+                        android:gravity="top"
                         android:paddingLeft="15dp"
-                        android:text="TextView" />
+                        android:text="TextView"
+                        android:textSize="12dp" />
                 </LinearLayout>
 
             </LinearLayout>
         </com.google.android.material.appbar.MaterialToolbar>
-
-
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="0dp"
+        android:gravity="bottom"
         android:orientation="vertical"
-        android:paddingBottom="60dp">
+        android:paddingTop="60dp">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/messagesrv"
+        <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="6dp"
-            android:focusable="auto"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:scrollbars="none" />
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/messagesrv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="-60dp"
+                android:focusable="auto"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -115,55 +130,71 @@
         android:gravity="bottom"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="5dp"
-            app:cardBackgroundColor="#FFFFFF"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="1dp"
-            app:cardPreventCornerOverlap="false">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="4dp"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageButton
+                android:id="@+id/camerasend"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/backroundforicons1"
+                android:clickable="true"
+                app:srcCompat="@drawable/camera" />
+
+            <EditText
+                android:id="@+id/chatedittext"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:focusable="true"
+                android:layout_marginRight="5dp"
+                android:layout_weight="4"
+                android:background="@drawable/chatinputtextboxstyle"
+                android:clickable="true"
+                android:drawablePadding="7dp"
+                android:ellipsize="start"
+                android:ems="10"
+                android:focusable="auto"
                 android:focusableInTouchMode="true"
-                android:orientation="horizontal">
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:paddingLeft="8dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="11dp" />
 
-                <EditText
-                    android:id="@+id/chatedittext"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:background="@drawable/sendermessagestyle"
-                    android:clickable="true"
-                    android:drawableLeft="@drawable/camera"
-                    android:drawablePadding="7dp"
-                    android:ellipsize="start"
-                    android:ems="10"
-                    android:focusable="auto"
-                    android:focusableInTouchMode="true"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:paddingLeft="8dp"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="11dp" />
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/backroundforicons1"
+                android:clickable="true"
+                app:srcCompat="@drawable/filesuploadinputtextbox" />
 
-                <ImageButton
-                    android:id="@+id/chatsendmessage"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@android:color/transparent"
-                    android:clickable="true"
-                    android:fadingEdgeLength="5dp"
-                    app:srcCompat="@drawable/ic_send" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            <ImageButton
+                android:id="@+id/chatsendmessage"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/backroundforicons1"
+                android:clickable="true"
+                android:fadingEdgeLength="5dp"
+                app:srcCompat="@drawable/ic_send" />
+        </LinearLayout>
 
     </LinearLayout>
+
 </FrameLayout>
